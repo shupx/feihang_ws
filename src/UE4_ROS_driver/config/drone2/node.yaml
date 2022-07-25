@@ -1,0 +1,43 @@
+left_camera:
+  address: 169.254.128.10
+  port: 7766
+  topic: camera/left
+  is_depth_img: false
+  fx: 320
+  fy: 320
+  cx: 320
+  cy: 240
+right_camera:
+  address: 169.254.128.10
+  port: 7767
+  topic: camera/right
+  is_depth_img: false
+  fx: 320
+  fy: 320
+  cx: 320
+  cy: 240
+depth_camera:
+  address: 169.254.128.10
+  port: 7768
+  topic: camera/depth
+  is_depth_img: true
+  fx: 320
+  fy: 320
+  cx: 320
+  cy: 240
+imu:
+  address: 169.254.128.10
+  port: 7774
+  topic: data_raw
+lidar:
+  address: 169.254.128.10
+  port: 7773
+  topic: scan
+att_controller:
+  address: 169.254.128.21
+  port: 7771
+  topic: control_cmd
+ground_truth:
+  address: 169.254.128.10
+  port: 7775
+  topic: ground_truth_odom
